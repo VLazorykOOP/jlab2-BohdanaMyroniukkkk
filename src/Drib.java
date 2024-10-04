@@ -3,7 +3,7 @@ public class Drib {
     private int denominator; 
     private static int count = 0; 
 
-    public Drib(int numerator, int denominator) { 
+    public Drib(int numerator, int denominator) throw IllegalArgumentException { 
         if (denominator == 0) { 
             throw new IllegalArgumentException("Знаменник не може бути нулем."); 
         }
